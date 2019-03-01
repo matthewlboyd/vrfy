@@ -24,9 +24,8 @@
 
 ### Running locally:
   * (if you don't have python3 installed, `brew install python3`. if you don't have homwebrew installed, do that.)
-  * start postgres database should be something like `pg_ctl start -D /usr/local/var/postgres`, where `/usr/local/var/postgres` is the location of the database. 
-  * In another tab/window `cd <vrfy-dir>` and start the virtual environment
-  * `pip install -r requirements.txt` this command installs the python libs for this project 
+  * Create a python3 virtual environment for the project and source it: `cd ~; virtualenv --python=/usr/bin/python3.5 py3_env; source py3_env/bin/activate`
+  * `pip3 install -r requirements.txt` this command installs the python libs for this project 
    * if you get errors installing pscopg2 and you're on ubuntu, try `sudo apt-get install libpq-dev python-dev`
   * `npm install` this command installs the node modules required for this project (if you don't have node installed `brew install node`)
   * `bower install` this command installs the bower components required for this project (if you don't have bower installed `npm install -g bower`)
